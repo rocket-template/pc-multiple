@@ -60,7 +60,7 @@ const server = new WebpackDevServer(compiler, {
 		'Access-Control-Allow-Origin': '*'
 	},
 	proxy: {
-        '^/m/vpc/dist/**/**': {
+        '^/{{name}}/dist/**/**': {
             target: config[env], // 'http://js.pre.meixincdn.com'
             secure: false,
             pathRewrite: function(p, req){
@@ -69,9 +69,9 @@ const server = new WebpackDevServer(compiler, {
             	if (r.test(p)) {
                     return p.replace(r, function(input, $1, $2, $3){
                         return $1 + $3;
-                    }).replace(/\/m\/vpc/, '');
+                    }).replace(/\/{{name}}/, '');
 				} else if (rimg.test(p)) {
-                    return p.replace(/\/m\/vpc/, '');
+                    return p.replace(/\/{{name}}/, '');
 				} else {
             		return p;
 				}
@@ -107,6 +107,6 @@ if (env === 'lcdev') {
     renderAll();
 }
 
-server.listen(config.port, "0.0.0.0", function() {
-	console.log(`Starting server on http://localhost:${config.port}`);
+server.listen(port, "0.0.0.0", function() {
+	console.log(`Starting server on http://localhost:${port}`);
 });

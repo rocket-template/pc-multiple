@@ -1,8 +1,3 @@
-/**
- *
- Created by zhangzhao on 2017/4/21.
- Email: zhangzhao@gomeplus.com
- */
 export default function formatNumber(number) {
     var num = parseInt(number),
         million = '万',

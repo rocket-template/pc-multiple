@@ -16,9 +16,6 @@ inquirer.prompt([{
 }])
     .then(answer => {
         process.env.NODE_ENV = answer.ENV;
-        //process.argv.push(['--env='+answer.ENV]);
-        //process.argv.push(port.port);
-        //console.log(process.argv);
         const spinner = ora(`building for ${process.env.NODE_ENV} ...`);
         spinner.start();
 

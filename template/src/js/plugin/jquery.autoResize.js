@@ -1,8 +1,3 @@
-/**
- *
- Created by zhangzhao on 2017/3/28.
- Email: zhangzhao@gomeplus.com
- */
 (function($) {
 
     $.fn.autoTextarea = function(settings) {

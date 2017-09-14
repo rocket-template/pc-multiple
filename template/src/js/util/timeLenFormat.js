@@ -1,8 +1,3 @@
-/**
- * [视频时长]
- * @Author: Fu Xiaochun
- * @Email:  fuzhengchun@gomeplus.com
- */
 import msToDuration from './msToDuration';
 
 function timeLenFormat(ms) {

@@ -9,7 +9,7 @@ var joinPath = require('path.join');
 const fsExtra = require('fs-extra');
 const rd = require('rd');
 
-let configFun = require('../common.conf.js');
+let config = require('../common.conf.js');
 let configProject = require('../../buildEnv.json');
 
 function HashMapPlugin(options) {
@@ -23,8 +23,6 @@ function HashMapPlugin(options) {
 
 HashMapPlugin.prototype.apply = function(compiler) {
 
-    let port = (process.env.NODE_ENV == 'feature' && process.argv.length > 2 ) ? process.argv[2]: '';
-    const config  = configFun(port);
 	compiler.plugin('emit', (compilation, callback) => {
 
 		// 修正静态资源 plublicPath
