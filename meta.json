@@ -20,5 +20,5 @@
       "message": "Use flame to manage version control?"
     }
   },
-  "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run localdev\n\nDocumentation can be found at https://github.com/rocket-template/pc-multiple"
+  "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run lcdev\n\nDocumentation can be found at https://github.com/rocket-template/pc-multiple"
 }

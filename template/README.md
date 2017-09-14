@@ -121,7 +121,6 @@
 
 #### 使用方法
 
-```
     npm run lcdev   本地开发服务
     npm run dev     本地代理dev环境
     npm run pre     本地代理pre环境
@@ -138,7 +137,7 @@
         http://localhost:7577
 
     flame项目地址，请自行新建一个空项目，设置一个release分支即可，配置到package.json对应的sp和publish命令中
-```
+
 
 #### 主要技术
 
