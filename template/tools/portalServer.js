@@ -24,6 +24,6 @@ module.exports = function () {
         if (err) {
             console.error(err);
         }
-        console.log(`The dev server is listening at http://localhost:${pkgJson.rocket.portalPort}/`);
+        console.log(`The portal server is listening at http://localhost:${pkgJson.rocket.portalPort}/`);
     });
 }

@@ -74,7 +74,7 @@
     "webpack-dev-server": "^2.8.1",
     "webpack-md5-hash": "^0.0.5",
     "webpack-merge": "^4.1.0",
-    "rocket-portal": "^1.0.1"
+    "rocket-portal": "^1.0.2"
   },
   "dependencies": {
     "GMP": "^1.1.13",
