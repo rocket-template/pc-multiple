@@ -54,7 +54,7 @@ import 'css/page/${target}/index.scss';
 	<meta name="description" content="" />
 	<meta name="format-detection" content="telephone=no">
 	<meta name="x5-page-mode" content="no-title"/>
-	<link rel="stylesheet" type="text/css" href="${buildEnv.project}/dist/css/${target}.css">
+	<link rel="stylesheet" type="text/css" href="/${buildEnv.project}/dist/css/${target}.css">
 </head>
 <body>
 	<%- include('../../common/head.ejs')%>
@@ -64,8 +64,8 @@ import 'css/page/${target}/index.scss';
 	</div>
 	<!-- main -->
 	<%- include('../../common/footer.ejs')%>
-	<script src="${buildEnv.project}/dist/js/vendor.js"></script>
-	<script src="${buildEnv.project}/dist/js/${target}.js"></script>
+	<script src="/${buildEnv.project}/dist/js/vendor.js"></script>
+	<script src="/${buildEnv.project}/dist/js/${target}.js"></script>
 </body>
 </html>`;
 		const jsTarget = path.join(jsPageTargetDir, target, `index.js`);

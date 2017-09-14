@@ -18,9 +18,9 @@ module.exports = {
     pre: `http://${buildEnv.hosts.pre}`,
     production: `https://${buildEnv.hosts.production}`,
     publicPath: {
-        lcdev: "/",
-        dev: `http://${buildEnv.hosts.dev}/m/${buildEnv.project}/dist`,
-        pre: `http://${buildEnv.hosts.pre}/m/${buildEnv.project}/dist`,
-        production: `https://${buildEnv.hosts.production}/m/${buildEnv.project}/dist`
+        lcdev: (port)=>`http://localhost:${port}/${buildEnv.project}/dist`,
+        dev: ()=>`http://${buildEnv.hosts.dev}/m/${buildEnv.project}/dist`,
+        pre: ()=>`http://${buildEnv.hosts.pre}/m/${buildEnv.project}/dist`,
+        production: ()=>`https://${buildEnv.hosts.production}/m/${buildEnv.project}/dist`
     }
 };

@@ -11,7 +11,7 @@ inquirer.prompt([{
     type: 'list',
     message: 'Which environment build for?',
     name: 'ENV',
-    choices: ['dev', 'pre', 'production', 'feature'],
+    choices: ['dev', 'pre', 'production'],
     default: 'dev'
 }])
     .then(answer => {
